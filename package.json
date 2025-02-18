@@ -1,0 +1,21 @@
+{
+	"name": "typescript-mocha-test",
+	"version": "1.0.0",
+	"description": "TypeScript project with Mocha testing",
+	"main": "dist/index.js",
+	"scripts": {
+		"build": "tsc",
+		"test": "mocha -r ts-node/register 'test/**/*.test.ts'",
+		"start": "ts-node src/index.ts"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"@types/chai": "^4.3.11",
+		"@types/mocha": "^10.0.6",
+		"@types/node": "^20.10.5",
+		"chai": "^4.3.10",
+		"mocha": "^10.2.0",
+		"ts-node": "^10.9.2",
+		"typescript": "^5.3.3"
+	}
+}
