@@ -1,12 +1,12 @@
 import { expect } from "chai";
-import toUpperCaseString from "../toUpperCaseString";
+import toUpperCaseString from "../src/toUpperCaseString";
 
 it("should convert string to uppercase", () => {
-	expect(toUpperCaseString("hello")).to.equal("HELLO");
-	expect(toUpperCaseString("TypeScript")).to.equal("TYPESCRIPT");
+  expect(toUpperCaseString("hello")).to.equal("HELLO");
+  expect(toUpperCaseString("TypeScript")).to.equal("TYPESCRIPT");
 });
 
 it("should enforce string type", () => {
-	// @ts-expect-error
-	expect(() => toUpperCaseString(42)).to.throw();
+  // @ts-expect-error
+  expect(() => toUpperCaseString(42)).to.throw();
 });

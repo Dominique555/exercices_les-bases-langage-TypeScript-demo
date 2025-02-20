@@ -3,9 +3,12 @@
  * Voici les niveaux  de difficulté (Facile, Moyen, Difficile)
  */
 
-export type Difficulte = 
-
-export function getDifficulte() {
+export enum Difficulte {
+  Facile = "Facile",
+  Moyen = "Moyen",
+  Difficile = "Difficile",
 }
+
+export function getDifficulte(difficulte: Difficulte) {}
 
 export default getDifficulte;
