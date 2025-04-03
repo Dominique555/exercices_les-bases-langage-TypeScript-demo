@@ -4,4 +4,6 @@ export interface Notification {
   message: string;
 }
 
-export function envoyerNotification(notification: Notification) {}
+export function envoyerNotification(notification: Notification) {
+  return `Notification envoyée via ${notification.type} à ${notification.destinataire} : \"${notification.message}\"`;
+}
