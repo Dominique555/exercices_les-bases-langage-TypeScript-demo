@@ -1,3 +1,5 @@
-function toUpperCaseString(str: string) {}
+function toUpperCaseString(str: string) {
+    return str.toUpperCase();
+}
 
 export default toUpperCaseString;
